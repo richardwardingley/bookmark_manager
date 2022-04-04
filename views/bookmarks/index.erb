@@ -1,0 +1,11 @@
+<ul>
+  <% @bookmarks.each do |bookmark| %>
+    <li>
+      <a href="<%= bookmark.url %>" target="_blank">
+        <%= bookmark.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/bookmarks/new">Create bookmark</a>
